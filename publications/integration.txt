@@ -1,0 +1,15 @@
+<table class="display" id="pubTable">
+</table>
+<script type="text/javascript" src="https://lukasiewycz.github.io/publications/jquery.min.js">
+</script><script type="text/javascript" src="https://lukasiewycz.github.io/publications/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://lukasiewycz.github.io/publications/BibTex-0.1.2.js"></script>
+<script type="text/javascript" src="https://lukasiewycz.github.io/publications/bib-publication-list.js"></script><script type="text/javascript">
+$(document).ready(function() {
+   var linkElement = document.createElement("link");
+   linkElement.rel = "stylesheet";
+   linkElement.href = "https://lukasiewycz.github.io/publications/bib-publication-list.css";
+
+   document.head.appendChild(linkElement);
+   bibtexify("https://lukasiewycz.github.io/publications/publications.bib", "pubTable");
+ });
+</script>
