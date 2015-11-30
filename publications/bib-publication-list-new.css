@@ -62,6 +62,9 @@
 .publications .techreport { 
 	background-color: #b77;
  }
+ .publications  .misc {
+	background-color: #000000; 
+ }
 .publications .legend .pub { 
 	width: 10px;
 	height: 10px;
