@@ -1,6 +1,6 @@
-var bibfileimg = 'https://lukasiewycz.github.io/publications/lib/images/bibtex.png';
-var pdffileimg = 'https://lukasiewycz.github.io/publications/lib/images/pdf.png';
-var linkimg = 'https://lukasiewycz.github.io/publications/lib/images/hyperlink.png';
+var bibfileimg = 'https://s-steinhorst.github.io/publications/lib/images/bibtex.png';
+var pdffileimg = 'https://s-steinhorst.github.io/publications/lib/images/pdf.png';
+var linkimg = 'https://s-steinhorst.github.io/publications/lib/images/hyperlink.png';
 
 var bibtexify = (function($) {
     // helper function to "compile" LaTeX special characters to HTML
