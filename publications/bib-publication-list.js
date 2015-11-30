@@ -337,8 +337,8 @@ var bibtexify = (function($) {
           }
         });
         // attach the event handlers to the bib items
-        $(".biblink", this.$pubTable).live('click', EventHandlers.showbib);
-        $(".bibclose", this.$pubTable).live('click', EventHandlers.hidebib);
+        $(".biblink", this.$pubTable).bind('click', EventHandlers.showbib);
+        $(".bibclose", this.$pubTable).bind('click', EventHandlers.hidebib);
     };
     // updates the stats, called whenever a new bibtex entry is parsed
     bibproto.updateStats = function updateStats(item) {
@@ -442,15 +442,41 @@ var bibtexify = (function($) {
         if (options.visualization) {
             $pubTable.before('<div id="' + bibElemId + 'pubchart" class="bibchart"></div>');
         }
-        var $bibSrc = $(bibsrc);
-        if ($bibSrc.length) { // we found an element, use its HTML as bibtex
-            new Bib2HTML($bibSrc.html(), $pubTable, options);
-            $bibSrc.hide();
-        } else { // otherwise we assume it is a URL
-            var callbackHandler = function(data) {
-                new Bib2HTML(data, $pubTable, options);
-            };
-            $.get(bibsrc, callbackHandler, "text");
-        }
+		
+		/*
+		if (typeof jQuery != 'undefined') {  
+		// jQuery is loaded => print the version
+		console.log(jQuery.fn.jquery);
+		}
+		console.log($ === jQuery);
+		*/
+		
+		if (typeof jQuery != 'undefined') {
+			
+			if (jQuery.fn.jquery != "1.6.4")
+			{
+				// New code (tested with jQuery 2.1.4) gets Bibtex-Data via jQuery Ajax request and parses the data to Bib2HTML function
+				$.get( bibsrc, function( data ) {
+					new Bib2HTML(data, $pubTable, options);
+				})
+				  .fail(function() {
+					document.getElementById(bibElemId).innerHTML = "File: '" + bibsrc + "' not found.";
+				  });
+			}
+			else
+			{
+				// Deprecated code (needs jQuery 1.6.4)
+				var $bibSrc = $(bibsrc);
+				if ($bibSrc.length) { // we found an element, use its HTML as bibtex
+					new Bib2HTML($bibSrc.html(), $pubTable, options);
+					$bibSrc.hide();
+				} else { // otherwise we assume it is a URL
+					var callbackHandler = function(data) {
+						new Bib2HTML(data, $pubTable, options);
+					};
+					$.get(bibsrc, callbackHandler, "text");
+				}
+			}
+		}
     };
 })(jQuery);
