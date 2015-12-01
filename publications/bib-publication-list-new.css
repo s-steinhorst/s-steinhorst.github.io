@@ -71,7 +71,6 @@
  }
 .publications .legend .pub {
 
-	width:10%;
 	width: 10px;
 
 	height: 10px;
@@ -81,7 +80,7 @@
 
 }
 .publications .legend {
-	width:10%;	
+	
 	margin-bottom: 20px;
 	text-align: center;
 /*
