@@ -81,7 +81,7 @@ var bibtexify = (function($) {
             var itemStr = '<br>';
             if (entryData.url && entryData.url.match(/.*\.pdf/)) {
                 itemStr += ' <a title="PDF document of this article" href="' +
-                            entryData.url + '"><img src=\"'+pdffileimg+'\" hspace="30px"/><\/a> ';
+                            entryData.url + '"><img src=\"'+pdffileimg+'\" style="margin-right:20px" class="alignleft/><\/a> ';
             } else if (entryData.url) {
                 itemStr += ' <a title="This article online" href="' + entryData.url +
                             '"><img src=\"'+linkimg+'\" /><\/a>';
@@ -92,7 +92,7 @@ var bibtexify = (function($) {
         bibtex: function(entryData) {
             var itemStr = '';
             itemStr += ' <a title="This article as BibTeX" href="#" class="biblink">' +
-                        '<img src=\"'+bibfileimg+'\" hspace="30px"/></a><div class="bibinfo hidden">';
+                        '<img src=\"'+bibfileimg+'\" style="margin-right:20px" class="alignleft"/></a><div class="bibinfo hidden">';
             itemStr += '<a href="#" class="bibclose" title="Close">x</a><pre>';
             itemStr += '@' + entryData.entryType + "{" + entryData.cite + ",\n";
             $.each(entryData, function(key, value) {
