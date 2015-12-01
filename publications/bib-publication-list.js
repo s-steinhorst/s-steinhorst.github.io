@@ -56,7 +56,6 @@ var bibtexify = (function($) {
             }
             var itemStr = htmlify(bib2html[type](entryData));
             itemStr += bib2html.links(entryData);
-			itemStr += "    ";
 			itemStr += bib2html.bibtex(entryData);
             if (bib.options.tweet && entryData.url) {
                 itemStr += bib2html.tweet(entryData, bib);
@@ -82,7 +81,7 @@ var bibtexify = (function($) {
             var itemStr = '<br>';
             if (entryData.url && entryData.url.match(/.*\.pdf/)) {
                 itemStr += ' <a title="PDF document of this article" href="' +
-                            entryData.url + '"><img src=\"'+pdffileimg+'\" /><\/a> ';
+                            entryData.url + '"><img src=\"'+pdffileimg+'\" hspace="30px"/><\/a> ';
             } else if (entryData.url) {
                 itemStr += ' <a title="This article online" href="' + entryData.url +
                             '"><img src=\"'+linkimg+'\" /><\/a>';
@@ -93,7 +92,7 @@ var bibtexify = (function($) {
         bibtex: function(entryData) {
             var itemStr = '';
             itemStr += ' <a title="This article as BibTeX" href="#" class="biblink">' +
-                        '<img src=\"'+bibfileimg+'\" /></a><div class="bibinfo hidden">';
+                        '<img src=\"'+bibfileimg+'\" hspace="30px"/></a><div class="bibinfo hidden">';
             itemStr += '<a href="#" class="bibclose" title="Close">x</a><pre>';
             itemStr += '@' + entryData.entryType + "{" + entryData.cite + ",\n";
             $.each(entryData, function(key, value) {
