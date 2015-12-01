@@ -6,6 +6,8 @@
 	color:red;
 }
 .publications .bibtable {
+	table-layout:fixed;
+	width:100%;
 	margin: 0 auto;
 	clear: both;
 }
