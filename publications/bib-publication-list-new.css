@@ -80,9 +80,9 @@
 
 	height: 10px;
 	display: inline-block;
-	/*
+
 	margin: 0 5px 0 15px;
-	*/
+
 }
 .publications .legend { 
 	margin-bottom: 20px;
@@ -92,10 +92,9 @@
 
 }
 .publications .pubi { 
-/*
 	border: 1px solid white;
 	width: 10px;
-	*/
+
 	height: 10px;
 	display: inline-block;
 	/*
