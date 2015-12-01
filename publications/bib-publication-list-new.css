@@ -26,7 +26,6 @@
 .publications .year {
 	position: relative;
 	height: 100%;
-	width: 10%;
 	border-bottom: 1px solid black;
 	display: inline-block;
 }
@@ -34,7 +33,6 @@
 	position: absolute;
 	bottom: -20px;
 	text-align: center;
-	width: 10%;
 	font-size: smaller;
 }
 .publications .pub { 
@@ -96,7 +94,6 @@
 	height: 10px;
 	display: inline-block;
 	margin: 0 5px 0 0px;
-	width:80%;
 }
 .publications table.display thead th { 
 	padding: 3px 18px 3px 10px;
@@ -146,7 +143,6 @@
 	display: none;
 }
 .publications div.bibinfo { 
-	width: 80%;
 	position: fixed;
 	top: 100px;
 	left: 10%;
