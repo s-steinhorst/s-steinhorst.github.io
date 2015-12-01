@@ -10,7 +10,7 @@
 	table-layout:auto;
 	width:95%;
 	*/
-	margin: 0 auto !important;
+	margin: 0 auto;
 	clear: both;
 }
 .publications .bibchart { 
@@ -111,6 +111,7 @@
 }
 .publications table.display td {
 	background-color: #FFFFFF;
+	padding: 3px 10px;
 }
 .publications table.display td.center { 
 	text-align: center;
