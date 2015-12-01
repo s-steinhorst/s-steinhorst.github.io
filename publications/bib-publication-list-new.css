@@ -10,7 +10,7 @@
 	table-layout:auto;
 	width:95%;
 	*/
-	margin: 0 auto;
+	margin: 0 auto !important;
 	clear: both;
 }
 .publications .bibchart { 
