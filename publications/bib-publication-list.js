@@ -56,7 +56,8 @@ var bibtexify = (function($) {
             }
             var itemStr = htmlify(bib2html[type](entryData));
             itemStr += bib2html.links(entryData);
-            itemStr += bib2html.bibtex(entryData);
+			itemStr += "    ";
+			itemStr += bib2html.bibtex(entryData);
             if (bib.options.tweet && entryData.url) {
                 itemStr += bib2html.tweet(entryData, bib);
             }
@@ -80,7 +81,7 @@ var bibtexify = (function($) {
         links: function(entryData) {
             var itemStr = '<br>';
             if (entryData.url && entryData.url.match(/.*\.pdf/)) {
-                itemStr += ' <a title="PDF-version of this article" href="' +
+                itemStr += ' <a title="PDF document of this article" href="' +
                             entryData.url + '"><img src=\"'+pdffileimg+'\" /><\/a> ';
             } else if (entryData.url) {
                 itemStr += ' <a title="This article online" href="' + entryData.url +
