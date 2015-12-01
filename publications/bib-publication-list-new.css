@@ -8,10 +8,12 @@
 .publications .bibtable {
 	/*
 	table-layout:auto;
-	*/
 	width:95%;
+	*/
 	margin: 0 auto;
+	/*
 	clear: both;
+	*/
 }
 .publications .bibchart { 
 	/*
@@ -76,7 +78,9 @@
 	width: 10px;
 	height: 10px;
 	display: inline-block;
+	/*
 	margin: 0 5px 0 15px;
+	*/
 }
 .publications .legend { 
 	margin-bottom: 20px;
