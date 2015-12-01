@@ -11,9 +11,7 @@
 	width:95%;
 	*/
 	margin: 0 auto;
-	/*
 	clear: both;
-	*/
 }
 .publications .bibchart { 
 	/*
@@ -41,9 +39,7 @@
 	font-size: smaller;
 }
 .publications .pub { 
-/*
 	border: 1px solid white;
-	*/
 	background-color: #eee;
  }
 .publications .inproceedings { 
@@ -82,9 +78,9 @@
 
 	height: 10px;
 	display: inline-block;
-/*
+
 	margin: 0 5px 0 15px;
-*/
+
 }
 .publications .legend { 
 	margin-bottom: 20px;
@@ -94,21 +90,14 @@
 
 }
 .publications .pubi { 
-/*
 	border: 1px solid white;
-	*/
 	width: 10px;
-
 	height: 10px;
 	display: inline-block;
-	/*
 	margin: 0 5px 0 0px;
-	*/
 }
 .publications table.display thead th { 
-/*
 	padding: 3px 18px 3px 10px;
-	*/
 	border-bottom: 1px solid black;
 	border-top: 1px solid black;
 	font-weight: bold;
@@ -116,17 +105,13 @@
 	cursor: hand;
 }
 .publications table.display tfoot th {
-/*	
 	padding: 3px 10px;
-	*/
 	border-top: 1px solid black;
 	font-weight: bold;
 }
 .publications table.display td {
 	background-color: #FFFFFF;
-	/*
 	padding: 3px 10px;
-	*/
 }
 .publications table.display td.center { 
 	text-align: center;
@@ -214,9 +199,7 @@
 	clear:both;
 	background-color: #BBBBBB;
 	padding:0;
-	/*
 	padding-left: 2em;
-	*/
 }
 
 .publications .dataTables_wrapper table thead{
