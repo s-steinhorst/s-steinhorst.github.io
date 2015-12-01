@@ -75,9 +75,9 @@
 	background-color: #000000; 
  }
 .publications .legend .pub {
-/*	
+
 	width: 10px;
-	*/
+
 	height: 10px;
 	display: inline-block;
 	/*
@@ -161,16 +161,15 @@
 	top: 100px;
 	left: 10%;
 	background-color: #bbb;
-	/*
+
 	border: 3px solid #fff;
-	*/
-	/*
+
 	padding: 10px;
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;
 	-o-border-radius:10px;
 	border-radius:10px;
-		*/
+
 	z-index: 50;
 }
 .publications #shutter { 
@@ -192,21 +191,21 @@
 	height: 35px;
 	left: -25px;
 	line-height: 20px;
-	/*
+
 	padding: 3px;
-	*/
+
 	position: relative;
 	text-align: center;
 	vertical-align: middle;
 	text-decoration: none;
 	top: -25px;
-	/*
+	
 	width: 35px;
 	-moz-border-radius:15px;
 	-webkit-border-radius:15px;
 	-o-border-radius:15px;
 	border-radius:15px;
-	*/
+
 }
 .publications div.bibinfo pre { 
 	clear:both;
