@@ -94,24 +94,32 @@
 	width: 10px;
 	height: 10px;
 	display: inline-block;
+	/*
 	margin: 0 5px 0 0px;
+	*/
 }
 .publications table.display thead th { 
+/*
 	padding: 3px 18px 3px 10px;
+	*/
 	border-bottom: 1px solid black;
 	border-top: 1px solid black;
 	font-weight: bold;
 	cursor: pointer;
 	cursor: hand;
 }
-.publications table.display tfoot th { 
+.publications table.display tfoot th {
+/*	
 	padding: 3px 10px;
+	*/
 	border-top: 1px solid black;
 	font-weight: bold;
 }
 .publications table.display td {
 	background-color: #FFFFFF;
+	/*
 	padding: 3px 10px;
+	*/
 }
 .publications table.display td.center { 
 	text-align: center;
@@ -150,7 +158,9 @@
 	left: 10%;
 	background-color: #bbb;
 	border: 3px solid #fff;
+	/*
 	padding: 10px;
+	*/
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;
 	-o-border-radius:10px;
@@ -176,7 +186,9 @@
 	height: 35px;
 	left: -25px;
 	line-height: 20px;
+	/*
 	padding: 3px;
+	*/
 	position: relative;
 	text-align: center;
 	vertical-align: middle;
@@ -192,7 +204,9 @@
 	clear:both;
 	background-color: #BBBBBB;
 	padding:0;
+	/*
 	padding-left: 2em;
+	*/
 }
 
 .publications .dataTables_wrapper table thead{
