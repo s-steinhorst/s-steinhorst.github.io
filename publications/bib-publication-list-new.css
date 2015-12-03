@@ -1,5 +1,7 @@
 .publications {
 	text-align: justify;
+	border: 0px solid white;
+    vertical-align: top;
 }
 
 .publications span.undefined {
