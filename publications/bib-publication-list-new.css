@@ -1,7 +1,5 @@
 .publications {
 	text-align: justify;
-	border: 0px solid white;
-    vertical-align: top;
 }
 
 .publications span.undefined {
@@ -212,12 +210,17 @@
 	display:none;
 }
 
-/*body {
-background-color: #FFFFFF;
+body {
+	border: 0px solid white;
+    vertical-align: top;
+/*
+	background-color: #FFFFFF;
 width: 800px;
 margin: 10px 40px;
 font-family: Georgia, Serif, Verdana, Geneva, sans-serif;
-}*/
+*/
+}
+
 .publications a:link {
     color: #0000AA;
 	text-decoration: none;
