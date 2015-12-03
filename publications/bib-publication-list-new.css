@@ -104,6 +104,8 @@
 	font-weight: bold;
 }
 .publications table.display td {
+	border: 0px solid white;
+    vertical-align: top;
 	background-color: #FFFFFF;
 	padding: 3px 10px;
 
