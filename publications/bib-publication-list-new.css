@@ -9,6 +9,8 @@
 	table-layout:fixed;
 	margin: 0 auto;
 	clear: both;
+	border: 0px solid white;
+    vertical-align: top;
 }
 .publications .clear {
 	clear:both;
@@ -209,11 +211,9 @@
 .publications .dataTables_wrapper table thead{
 	display:none;
 }
-
-.publications table.display {
-	border: 0px solid white;
-    vertical-align: top;
 /*
+.publications table.display {
+
 	background-color: #FFFFFF;
 width: 800px;
 margin: 10px 40px;
