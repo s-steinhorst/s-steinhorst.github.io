@@ -210,7 +210,7 @@
 	display:none;
 }
 
-.publications table {
+.publications table.display {
 	border: 0px solid white;
     vertical-align: top;
 /*
