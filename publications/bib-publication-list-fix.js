@@ -298,12 +298,12 @@ var bibtexify = (function($) {
 			previousyear = item.year;
         }
         if ($.fn.dataTableExt !== undefined) {
-		jQuery.fn.dataTableExt.oSort['type-sort-asc'] = function(x, y) {
+		$.fn.dataTableExt.oSort['type-sort-asc'] = function(x, y) {
             var item1 = bib2html.importance[entryTypes[x]],
                 item2 = bib2html.importance[entryTypes[y]];
             return ((item1 < item2) ? -1 : ((item1 > item2) ?  1 : 0));
         };
-        jQuery.fn.dataTableExt.oSort['type-sort-desc'] = function(x, y) {
+        $.fn.dataTableExt.oSort['type-sort-desc'] = function(x, y) {
             var item1 = bib2html.importance[entryTypes[x]],
                 item2 = bib2html.importance[entryTypes[y]];
             return ((item1 < item2) ? 1 : ((item1 > item2) ?  -1 : 0));
