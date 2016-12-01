@@ -118,6 +118,7 @@
 }
 .publications table.display td:nth-child(3) {
     width: auto;
+	text-align: justify;
 }
 
 	
