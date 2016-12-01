@@ -226,8 +226,14 @@ font-family: Georgia, Serif, Verdana, Geneva, sans-serif;
 
 .publications a:link {
     color: #0000AA;
-	text-decoration: none !important;
+	text-decoration: none;
 }
+
+.publications .biblink a:link {
+    color: #0000AA;
+	text-decoration: none;
+}
+
 .publications a:visited {
 	color: #0000AA;
 	text-decoration: none;
