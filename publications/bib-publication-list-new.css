@@ -224,7 +224,7 @@ font-family: Georgia, Serif, Verdana, Geneva, sans-serif;
 */
 }
 
-.publications table.display a:link {
+.publications table.display td a:link {
     color: #0000AA;
 	text-decoration: none;
 }
