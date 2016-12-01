@@ -224,10 +224,6 @@ font-family: Georgia, Serif, Verdana, Geneva, sans-serif;
 */
 }
 
-.publications a:link {
-    color: #0000AA;
-	text-decoration: none;
-}
 
 .publications a:link {
     color: #0000AA;
@@ -236,12 +232,12 @@ font-family: Georgia, Serif, Verdana, Geneva, sans-serif;
 }
 
 .publications a:visited {
-	color: #0000AA;
+	color: #000055;
 	text-decoration: none;
 	border-bottom: none;
 }
 .publications a:hover {
-	color: #0000AA;
+	color: #0000FF;
 	text-decoration: none;
 	border-bottom: none;
 }
