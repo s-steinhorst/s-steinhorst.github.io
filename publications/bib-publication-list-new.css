@@ -229,22 +229,26 @@ font-family: Georgia, Serif, Verdana, Geneva, sans-serif;
 	text-decoration: none;
 }
 
-.publications .biblink a:link {
+.publications a:link {
     color: #0000AA;
 	text-decoration: none;
+	border-bottom: none;
 }
 
 .publications a:visited {
 	color: #0000AA;
 	text-decoration: none;
+	border-bottom: none;
 }
 .publications a:hover {
 	color: #0000AA;
 	text-decoration: none;
+	border-bottom: none;
 }
 .publications a:active {
 	color: #0000AA;
 	text-decoration: none;
+	border-bottom: none;
 }
 
 .publications .entrytitle {
