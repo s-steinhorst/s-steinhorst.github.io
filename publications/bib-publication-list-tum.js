@@ -85,7 +85,7 @@ var bibtexify = (function($) {
            // } else if (entryData.url) {
            //     itemStr += ' <a title="This article online" href="' + entryData.url +
            //                 '"><img src=\"'+linkimg+'\"  style="margin-right:30px" class="alignleft"/><\/a>';
-            }
+           // }
             return itemStr;
         },
         // adds the bibtex link and the opening div with bibtex content
