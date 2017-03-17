@@ -80,7 +80,7 @@ var bibtexify = (function($) {
         links: function(entryData) {
            var itemStr = '<br>';
            if (entryData.url && entryData.url.match(/.*\.pdf/)) {
-               itemStr += ' <a title="PDF document of this article" href="' +
+               itemStr += ' <a title="PDF document of author preprint version of this article" href="' +
                            entryData.url + '"><img src=\"'+pdffileimg+'\" style="margin-right:30px" class="alignleft"/><\/a> ';
            } else if (entryData.url) {
                itemStr += ' <a title="This article online" href="' + entryData.url +
