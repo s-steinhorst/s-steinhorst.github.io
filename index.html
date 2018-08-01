@@ -1,0 +1,27 @@
+<head>
+	<link rel="stylesheet" href="https://s-steinhorst.github.io/publications/bib-publication-list-new.css"/>
+	<title>Sebastian Steinhorst - Publications</title>
+	<link rel="stylesheet" href="publications/site.css"/>
+	<link rel="stylesheet" href="publications/bib-publication-list.css"/>
+</head>
+	<body>
+		<h1>Sebastian Steinhorst - Publications</h1>
+
+<div class="publications">
+<table class="display" id="pubTable">
+</table>
+<script type="text/javascript" src="https://s-steinhorst.github.io/publications/jquery.min.js"></script>
+<script type="text/javascript" src="https://s-steinhorst.github.io/publications/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://s-steinhorst.github.io/publications/BibTex-0.1.2.js"></script>
+<script type="text/javascript" src="https://s-steinhorst.github.io/publications/bib-publication-list-tum-dl.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    var linkElement = document.createElement("link");
+       linkElement.rel = "stylesheet";
+     linkElement.href = "https://s-steinhorst.github.io/publications/bib-publication-list-new.css";
+    document.head.appendChild(linkElement);
+
+    bibtexify("https://s-steinhorst.github.io/BIB/publications.bib", "pubTable");
+  });
+</script>
+</div>
