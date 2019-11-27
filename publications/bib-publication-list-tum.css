@@ -215,9 +215,11 @@
 	display:none;
 }
 
+/*
 .publications table.display {
 font-family: Georgia, Serif, Verdana, Geneva, sans-serif !important;
 }
+*/
 
 .publications a:link {
     color: #0000AA;
