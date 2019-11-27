@@ -109,7 +109,10 @@
 	background-color: #FFFFFF;
 	padding: 3px 10px;
 	font-family: Arial,sans-serif !important;
-
+	font-size: 0.875em;
+    line-height: 1.55em;
+    font-family: Arial,sans-serif;
+    color: #333;
 }
 .publications table.display td:nth-child(1) {
     width: 80px;
