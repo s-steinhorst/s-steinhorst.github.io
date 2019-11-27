@@ -108,6 +108,7 @@
     vertical-align: top;
 	background-color: #FFFFFF;
 	padding: 3px 10px;
+	font-family: Arial,sans-serif !important;
 
 }
 .publications table.display td:nth-child(1) {
