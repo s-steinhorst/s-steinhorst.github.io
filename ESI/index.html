@@ -17,6 +17,8 @@
     document.head.appendChild(linkElement);
 
     bibtexify("https://s-steinhorst.github.io/BIB/publications.bib", "pubTable");
+	
+	document.querySelectorAll(".iframe iframe.iframe__frame")[0].style.height=document.querySelectorAll("body")[0].scrollHeight +'px';"
   });
 </script>
 </div>
