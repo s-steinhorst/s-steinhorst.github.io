@@ -105,7 +105,7 @@ var bibtexify = (function($) {
                     itemStr += '  ' + key + " = { " + value + " },\n";
                 }
             });
-			itemStr += ") title="This article as BibTeX" href="#" class="biblink">' +
+			itemStr += '") title="This article as BibTeX" href="#" class="biblink">' +
                         '<img src=\"'+bibfileimg+'\" style="margin-right:30px" class="alignleft"/></a>';
 						//<div class="bibinfo hidden">';
             //itemStr += '<a href="#" class="bibclose" title="Close">x</a><pre>';
