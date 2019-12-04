@@ -91,10 +91,8 @@ var bibtexify = (function($) {
         // adds the bibtex link and the opening div with bibtex content
         bibtex: function(entryData) {
             var itemStr = '';
-            itemStr += ' <a title="This article as BibTeX" href="#" class="biblink">' +
-                        '<img src=\"'+bibfileimg+'\" style="margin-right:30px" class="alignleft"/></a><div class="bibinfo hidden">';
-            itemStr += '<a href="#" class="bibclose" title="Close">x</a><pre>';
-            itemStr += '@' + entryData.entryType + "{" + entryData.cite + ",\n";
+            itemStr += ' <a onclick="window.open().document.write("';
+			itemStr += '@' + entryData.entryType + "{" + entryData.cite + ",\n";
             $.each(entryData, function(key, value) {
                 if (key == 'author') {
                     itemStr += '  author = { ';
@@ -107,7 +105,11 @@ var bibtexify = (function($) {
                     itemStr += '  ' + key + " = { " + value + " },\n";
                 }
             });
-            itemStr += "}</pre></div>";
+			itemStr += ")" title="This article as BibTeX" href="#" class="biblink">' +
+                        '<img src=\"'+bibfileimg+'\" style="margin-right:30px" class="alignleft"/></a><div class="bibinfo hidden">';
+            //itemStr += '<a href="#" class="bibclose" title="Close">x</a><pre>';
+            
+            // itemStr += "}</pre></div>";
             return itemStr;
         },
         // generates the twitter link for the entry
@@ -139,7 +141,7 @@ var bibtexify = (function($) {
                 "\"<span class=\"entrytitle\" >" + entryData.title + "</span>\"" + ". In: <em>" + entryData.booktitle + ".<\/em>" +
 				" " + entryData.location + 
 				((entryData.pages)? ", pp. " + entryData.pages :"") + "." +
-				((entryData.doi)? " DOI: <a href=\"http://dx.doi.org/"+entryData.doi+"\">"+entryData.doi+"</a>":"") +
+				((entryData.doi)? " DOI: <target=\"_blank\" a href=\"http://dx.doi.org/"+entryData.doi+"\">"+entryData.doi+"</a>":"") +
 				((!entryData.doi && entryData.isbn)?" ISBN: " + entryData.isbn + "":"");
         },
         article: function(entryData) {
@@ -147,7 +149,7 @@ var bibtexify = (function($) {
                 "\"<span class=\"entrytitle\" >" + entryData.title + "</span>\"" + ". <em> In: " + entryData.journal + ", " + entryData.volume +
                 ((entryData.number)?"(" + entryData.number + ")":"")+ ", " +
                 "pp. " + entryData.pages + ". " +
-                ((entryData.doi)? " DOI: <a href=\"http://dx.doi.org/"+entryData.doi+"\">"+entryData.doi+"</a>":"") +
+                ((entryData.doi)? " DOI: <target=\"_blank\" a href=\"http://dx.doi.org/"+entryData.doi+"\">"+entryData.doi+"</a>":"") +
 				((!entryData.doi && entryData.isbn)?" ISBN: " + entryData.isbn + "":"");
         },
         misc: function(entryData) {
@@ -189,7 +191,7 @@ var bibtexify = (function($) {
                 entryData.publisher + ", pp. " + entryData.pages + "" +
                 ((entryData.series)?", <em>" + entryData.series + "<\/em>":"") +
                 ((entryData.volume)?", Vol. " + entryData.volume + "":"") +
-                ((entryData.doi)? " DOI: <a href=\"http://dx.doi.org/"+entryData.doi+"\">"+entryData.doi+"</a>":"") +
+                ((entryData.doi)? " DOI: <target=\"_blank\" a href=\"http://dx.doi.org/"+entryData.doi+"\">"+entryData.doi+"</a>":"") +
 				((!entryData.doi && entryData.isbn)?" ISBN: " + entryData.isbn + "":"");
         },
         // weights of the different types of entries; used when sorting
