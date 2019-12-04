@@ -83,7 +83,7 @@ var bibtexify = (function($) {
                itemStr += ' <a title="PDF document of author preprint version of this article" target="_blank" href="' +
                            entryData.url + '"><img src=\"'+pdffileimg+'\" style="margin-right:30px" class="alignleft"/><\/a> ';
            } else if (entryData.url) {
-               itemStr += ' <a title="This article online" href="' + entryData.url +
+               itemStr += ' <a title="This article online" target="_blank" href="' + entryData.url +
                            '"><img src=\"'+linkimg+'\"  style="margin-right:30px" class="alignleft"/><\/a>';
            }
            return itemStr;
