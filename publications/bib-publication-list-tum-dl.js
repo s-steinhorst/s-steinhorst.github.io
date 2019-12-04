@@ -106,7 +106,8 @@ var bibtexify = (function($) {
                 }
             });
 			itemStr += ")" title="This article as BibTeX" href="#" class="biblink">' +
-                        '<img src=\"'+bibfileimg+'\" style="margin-right:30px" class="alignleft"/></a><div class="bibinfo hidden">';
+                        '<img src=\"'+bibfileimg+'\" style="margin-right:30px" class="alignleft"/></a>';
+						//<div class="bibinfo hidden">';
             //itemStr += '<a href="#" class="bibclose" title="Close">x</a><pre>';
             
             // itemStr += "}</pre></div>";
