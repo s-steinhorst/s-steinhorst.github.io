@@ -91,21 +91,21 @@ var bibtexify = (function($) {
         // adds the bibtex link and the opening div with bibtex content
         bibtex: function(entryData) {
             var itemStr = '';
-            itemStr += ' <a onclick="window.open(document.location.url,\'_blank\')' //;w.document.write(\'';
-			itemStr += '@' + entryData.entryType + "{" + entryData.cite + ",\n";
-            $.each(entryData, function(key, value) {
-                if (key == 'author') {
-                    itemStr += '  author = \{ ';
-                    for (var index = 0; index < value.length; index++) {
-                        if (index > 0) { itemStr += " and "; }
-                        itemStr += value[index].last;
-                    }
-                    itemStr += ' \},\n';
-                } else if (key != 'entryType' && key != 'cite') {
-                    itemStr += '  ' + key + " = \{ " + value + " \},\n";
-                }
-            });
-			itemStr += '\')" title="This article as BibTeX" target="_blank" href="#" class="biblink">' +
+            itemStr += ' <a onclick="window.open(document.location.url,\'_blank\')"' //;w.document.write(\'';
+			//itemStr += '@' + entryData.entryType + "{" + entryData.cite + ",\n";
+            // $.each(entryData, function(key, value) {
+            //     if (key == 'author') {
+            //         itemStr += '  author = \{ ';
+            //         for (var index = 0; index < value.length; index++) {
+            //             if (index > 0) { itemStr += " and "; }
+            //             itemStr += value[index].last;
+            //         }
+            //         itemStr += ' \},\n';
+            //     } else if (key != 'entryType' && key != 'cite') {
+            //         itemStr += '  ' + key + " = \{ " + value + " \},\n";
+            //     }
+            // });
+			//itemStr += '\')" title="This article as BibTeX" target="_blank" href="#" class="biblink">' +
                         '<img src=\"'+bibfileimg+'\" style="margin-right:30px" class="alignleft"/></a>';
 						//<div class="bibinfo hidden">';
             //itemStr += '<a href="#" class="bibclose" title="Close">x</a><pre>';
