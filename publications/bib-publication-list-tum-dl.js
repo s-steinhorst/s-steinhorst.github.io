@@ -91,7 +91,7 @@ var bibtexify = (function($) {
         // adds the bibtex link and the opening div with bibtex content
         bibtex: function(entryData) {
             var itemStr = '';
-            itemStr += ' <a onclick="(var w=window.open(document.location.href, \'_blank\');w.document.write(\'';
+            itemStr += ' <a onclick="window.open(document.location.url,\'_blank\')' //;w.document.write(\'';
 			itemStr += '@' + entryData.entryType + "{" + entryData.cite + ",\n";
             $.each(entryData, function(key, value) {
                 if (key == 'author') {
