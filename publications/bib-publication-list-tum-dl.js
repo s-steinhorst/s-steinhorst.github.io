@@ -91,21 +91,21 @@ var bibtexify = (function($) {
         // adds the bibtex link and the opening div with bibtex content
         bibtex: function(entryData) {
             var itemStr = '';
-            itemStr += ' <a onclick="window.open().document.write("';
+            itemStr += ' <a onclick="window.open().document.write(\'';
 			itemStr += '@' + entryData.entryType + "{" + entryData.cite + ",\n";
             $.each(entryData, function(key, value) {
                 if (key == 'author') {
-                    itemStr += '  author = { ';
+                    itemStr += '  author = \{ ';
                     for (var index = 0; index < value.length; index++) {
                         if (index > 0) { itemStr += " and "; }
                         itemStr += value[index].last;
                     }
-                    itemStr += ' },\n';
+                    itemStr += ' \},\n';
                 } else if (key != 'entryType' && key != 'cite') {
-                    itemStr += '  ' + key + " = { " + value + " },\n";
+                    itemStr += '  ' + key + " = \{ " + value + " \},\n";
                 }
             });
-			itemStr += '") title="This article as BibTeX" href="#" class="biblink">' +
+			itemStr += '\') title="This article as BibTeX" href="#" class="biblink">' +
                         '<img src=\"'+bibfileimg+'\" style="margin-right:30px" class="alignleft"/></a>';
 						//<div class="bibinfo hidden">';
             //itemStr += '<a href="#" class="bibclose" title="Close">x</a><pre>';
