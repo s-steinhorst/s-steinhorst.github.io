@@ -91,7 +91,7 @@ var bibtexify = (function($) {
         // adds the bibtex link and the opening div with bibtex content
         bibtex: function(entryData) {
             var itemStr = '';
-            itemStr += ' <a href="#" rel="noopener noreferrer" title="This article as BibTeX" target="_blank" onclick="window.open(\'javascript:void(0)\',\'_blank\').document.write(\'';
+            itemStr += ' <a href="javascript:" style="text-decoration:underline;" rel="noopener noreferrer" title="This article as BibTeX" target="_blank" onclick="window.open(\'javascript:void(0)\',\'_blank\').document.write(\'';
 			itemStr += '@' + entryData.entryType + "{" + entryData.cite + ",\n";
             $.each(entryData, function(key, value) {
                 if (key == 'author') {
@@ -105,7 +105,7 @@ var bibtexify = (function($) {
                     itemStr += '  ' + key + " = \{ " + value + " \},\n";
                 }
             });
-			itemStr += '\')">'// title="This article as BibTeX" target="_blank" href="#" class="biblink">' +
+			itemStr += '\');return false;">'// title="This article as BibTeX" target="_blank" href="#" class="biblink">' +
             itemStr += '<img src=\"'+bibfileimg+'\" style="margin-right:30px" class="alignleft"/></a>';
 						//<div class="bibinfo hidden">';
             //itemStr += '<a href="#" class="bibclose" title="Close">x</a><pre>';
