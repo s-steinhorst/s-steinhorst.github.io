@@ -91,7 +91,7 @@ var bibtexify = (function($) {
         // adds the bibtex link and the opening div with bibtex content
         bibtex: function(entryData) {
             var itemStr = '';
-            itemStr += ' <a href="javascript:" style="text-decoration:underline;" rel="noopener noreferrer" title="This article as BibTeX" target="_blank" onclick="window.open(\'javascript:void(0)\',\'_blank\').document.write(\'';
+            itemStr += ' <a href="javascript:;" rel="noopener noreferrer" title="This article as BibTeX" target="_blank" onclick="window.open(\'javascript:;\',\'_blank\').document.write(\'';
 			itemStr += '@' + entryData.entryType + "{" + entryData.cite + ",\\n";
             $.each(entryData, function(key, value) {
                 if (key == 'author') {
