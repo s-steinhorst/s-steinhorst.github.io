@@ -92,7 +92,7 @@ var bibtexify = (function($) {
         bibtex: function(entryData) {
             var itemStr = '';
             itemStr += ' <a href="javascript:" style="text-decoration:underline;" rel="noopener noreferrer" title="This article as BibTeX" target="_blank" onclick="window.open(\'javascript:void(0)\',\'_blank\').document.write(\'';
-			itemStr += '@' + entryData.entryType + "{" + entryData.cite + ",\n";
+			itemStr += '@' + entryData.entryType + "{" + entryData.cite + ",\\n";
             $.each(entryData, function(key, value) {
                 if (key == 'author') {
                     itemStr += '  author = \{ ';
@@ -100,9 +100,9 @@ var bibtexify = (function($) {
                         if (index > 0) { itemStr += " and "; }
                         itemStr += value[index].last;
                     }
-                    itemStr += ' \},\n';
+                    itemStr += ' \},\\n';
                 } else if (key != 'entryType' && key != 'cite') {
-                    itemStr += '  ' + key + " = \{ " + value + " \},\n";
+                    itemStr += '  ' + key + " = \{ " + value + " \},\\n";
                 }
             });
 			itemStr += '\');return false;">'// title="This article as BibTeX" target="_blank" href="#" class="biblink">' +
